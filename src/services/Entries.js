@@ -20,7 +20,7 @@ export const saveEntry = async (value, entry = {}) => {
       data = {
         id: value.id || entry.id || getUUID(),
         amount: value.amount || entry.amount,
-        description: value.description || entry.description,
+        category: value.category || entry.category,
         entryAt: value.entryAt || entry.entryAt,
         isInit: false,
       };
